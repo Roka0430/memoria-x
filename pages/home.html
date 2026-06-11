@@ -1,0 +1,60 @@
+<div class="home">
+  <section class="header-menu">
+    <a href="?edit" class="button" title="E key">Edit</a>
+  </section>
+  <section class="settings">
+    <form class="settings__form" data-ui="settingsForm">
+      <div class="settings__category">
+        <div class="settings__category-name">表示形式</div>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="format" value="split">
+          <span class="settings__label-text">短文分割</span>
+        </label>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="format" value="full">
+          <span class="settings__label-text">全文一斉</span>
+        </label>
+      </div>
+      <div class="settings__category">
+        <div class="settings__category-name">解答方式</div>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="answer" value="input">
+          <span class="settings__label-text">入力</span>
+        </label>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="answer" value="flip">
+          <span class="settings__label-text">めくり</span>
+        </label>
+      </div>
+      <div class="settings__category">
+        <div class="settings__category-name">出題順</div>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="order" value="sequence">
+          <span class="settings__label-text">設定順</span>
+        </label>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="order" value="random">
+          <span class="settings__label-text">ランダム順</span>
+        </label>
+      </div>
+      <div class="settings__category">
+        <div class="settings__category-name">めくり</div>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="blank" value="fixed">
+          <span class="settings__label-text">等幅めくり</span>
+        </label>
+        <label class="settings__label">
+          <input type="radio" class="settings__radiobox" name="blank" value="auto">
+          <span class="settings__label-text">可変幅めくり</span>
+        </label>
+      </div>
+      <div class="settings__separator">
+      </div>
+      <div class="settings__category">
+        <button class="button" data-settings="format=split,answer=input">短文分割＋入力</button>
+        <button class="button" data-settings="format=full,answer=flip">全文一斉＋めくり</button>
+      </div>
+    </form>
+  </section>
+  <section class="subject-list" data-ui="subjectList"></section>
+</div>
